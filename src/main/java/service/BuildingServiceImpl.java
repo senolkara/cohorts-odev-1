@@ -21,7 +21,7 @@ public class BuildingServiceImpl implements BuildingService {
 
     @Override
     public void save(List<BuildingRequestDto> buildingRequestDtoList) {
-        List<Building> buildingList = BuildingConverter.toBuildingByBuildingRequestDto(buildingRequestDtoList);
+        List<Building> buildingList = BuildingConverter.toBuildingByBuildingRequestDtoList(buildingRequestDtoList);
         buildingRepository.save(buildingList);
     }
 

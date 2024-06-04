@@ -17,7 +17,7 @@ public class BuildingConverter {
 
     private static Set<Long> buildingIdSet = new HashSet<>();
 
-    public static List<Building> toBuildingByBuildingRequestDto(List<BuildingRequestDto> buildingRequestDtoList){
+    public static List<Building> toBuildingByBuildingRequestDtoList(List<BuildingRequestDto> buildingRequestDtoList){
         List<Building> buildingList = new ArrayList<>();
         buildingRequestDtoList.forEach(buildingRequestDto -> {
             Long id = GenerateRandomUnique.createId(buildingIdSet);
